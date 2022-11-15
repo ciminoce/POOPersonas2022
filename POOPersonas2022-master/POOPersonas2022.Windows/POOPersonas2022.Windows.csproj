@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1A18F30-E8C9-4AA2-B6B1-0E46241F567E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>POOPersonas2022.Windows</RootNamespace>
+    <AssemblyName>POOPersonas2022.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmComienzaCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComienzaCon.Designer.cs">
+      <DependentUpon>frmComienzaCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonasAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonasAE.Designer.cs">
+      <DependentUpon>frmPersonasAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmComienzaCon.resx">
+      <DependentUpon>frmComienzaCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonasAE.resx">
+      <DependentUpon>frmPersonasAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1462990831_save_as-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1462990863_save_as-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1473267083_document-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1473267191_delete-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1473267203_edit-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476724560_filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476726158_view-sort-ascending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476989453_old-edit-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Refresh-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log-Out-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POOPersonas2022.Datos\POOPersonas2022.Datos.csproj">
+      <Project>{e94f3185-cb0b-434a-9871-828bfdc63545}</Project>
+      <Name>POOPersonas2022.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POOPersonas2022.Entidades\POOPersonas2022.Entidades.csproj">
+      <Project>{7997aeeb-5d21-4f50-b0f8-8ac93205d000}</Project>
+      <Name>POOPersonas2022.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
